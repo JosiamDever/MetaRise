@@ -26,6 +26,25 @@ header .conteiner-navbar{
   
 }
 
+.conteiner-navbar #navbar-exit{
+  
+  display: none;
+  
+  font-size: 6vw;
+  
+  position: relative;
+  z-index: 1002;
+  
+  cursor: pointer;
+  
+}
+
+#navbar-exit.showExit{
+  
+
+  
+}
+
 .conteiner-navbar .conteiner-sidebar{
   
   display: flex;
@@ -46,10 +65,9 @@ header .conteiner-navbar{
   top: 0;
   right: -100%;
   
-  background-color: lightslategrey;
+  background: rgba(40, 40, 40, 0.8);
   
   padding: 8rem 0rem;
-  
   
   transition: all 0.5s ease-out;
   
@@ -73,9 +91,6 @@ header .conteiner-navbar{
   
   font-size: clamp(1.2rem,2.5vw,20rem);
   
-  background-color: mediumpurple;
-  
-  
 }
 
 .sidebar-nav ul li{
@@ -83,8 +98,6 @@ header .conteiner-navbar{
   width: 100%;
   max-width: 100%;
   cursor: pointer;
-  
-  background: forestgreen;
   
   display: flex;
   flex-flow: row nowrap;
@@ -109,6 +122,22 @@ header .conteiner-navbar{
   background-color: dodgerblue;
   
   padding: 1.3rem 2rem;
+  
+}
+
+@media only screen and (min-width: 700px){
+  
+  .sidebar-nav ul li{
+    
+    padding-left: 5rem;
+    
+  }
+  
+  .sidebar-nav ul li:hover{
+    
+    padding-left: 5rem;
+    
+  }
   
 }
 
