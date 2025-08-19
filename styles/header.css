@@ -22,6 +22,8 @@ header .conteiner-navbar{
   position: relative;
   z-index: 1002;
   
+  cursor: pointer;
+  
 }
 
 .conteiner-navbar .conteiner-sidebar{
@@ -33,43 +35,80 @@ header .conteiner-navbar{
   position: fixed;
   z-index: 300;
   
+  height: 100vh;
   min-height: 100vh;
+  
   min-width: 50%;
+  max-width: 70%;
+  
+  overflow-y: auto;
   
   top: 0;
   right: -100%;
   
   background-color: lightslategrey;
   
-  padding: 6rem 2rem;
+  padding: 8rem 0rem;
+  
   
   transition: all 0.5s ease-out;
   
 }
 
+.conteiner-sidebar .sidebar-nav{
+  
+  min-width: 100%;
+  
+}
+
 .conteiner-sidebar .sidebar-nav ul{
   
-  width: 90%;
+  /*scroll funciona com medida fix*/
+  min-width: 100%;
+  width: 100%;
   
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  gap: 2rem;
+  flex-flow: column nowrap;
+  gap: 4rem;
+  
+  font-size: clamp(1.2rem,2.5vw,20rem);
   
   background-color: mediumpurple;
+  
+  
 }
 
 .sidebar-nav ul li{
   
   width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+  
+  background: forestgreen;
   
   display: flex;
   flex-flow: row nowrap;
   gap: 0.6rem;
-
   align-items: center;
+  justify-content: flex-start;
   
-  background: seagreen;
+  padding: 0rem 2rem;
+  
+  transition: all 0.3s ease-out;
+  
+}
+
+.sidebar-nav p{
+  
+  max-width: 80%;
+  
+}
+
+.sidebar-nav li:hover{
+  
+  background-color: dodgerblue;
+  
+  padding: 1.3rem 2rem;
   
 }
 

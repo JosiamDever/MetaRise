@@ -13,3 +13,5 @@ btnInit.addEventListener('click',() => {
    : sideBar.classList.add('sideBarAtiva')
   
 });
+
+//reduzir a largura máxima dos parágrafos usando js,ao ativar o hover 
