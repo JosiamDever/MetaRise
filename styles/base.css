@@ -20,6 +20,27 @@ body{
 
 }
 
+a{
+  
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  
+}
+
+ul{
+  
+  list-style-type: none;
+  
+}
+
+p{
+  
+  word-wrap: break-word;
+  hyphens: auto; 
+  
+}
+
 .wrapper{
   
   width: 100%;
