@@ -20,6 +20,19 @@ body{
 
 }
 
+ul{
+  
+  list-style-type: none;
+  
+}
+
+p{
+  
+  word-wrap: break-word;
+  hyphens: auto; 
+  
+}
+
 .wrapper{
   
   width: 100%;
