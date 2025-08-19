@@ -19,5 +19,32 @@ header .conteiner-navbar{
   
   font-size: 6vw;
   
+  position: relative;
+  z-index: 1002;
+  
+}
+
+.conteiner-navbar .conteiner-sidebar{
+  
+  display: none;
+  
+  position: fixed;
+  z-index: 300;
+  
+  min-height: 100vh;
+  width: 50%;
+  
+  top: 0;
+  right: -50%;
+  
+  transition: all 0.3s ease-out;
+  
+}
+
+.conteiner-sidebar.sideBarAtiva{
+  
+  display: block;
+  right: 50%;
+  
 }
 
