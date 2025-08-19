@@ -1,0 +1,28 @@
+header .conteiner-navbar{
+  
+  background: linear-gradient(90deg, hsla(344, 97%, 63%, 1) 0%, hsla(232, 90%, 59%, 1) 100%);
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 1rem 1rem;
+  
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  
+}
+
+.conteiner-navbar #navbar-bars{
+  
+  font-size: 6vw;
+  
+}
+
+main{
+  
+  padding-top: 6rem;
+  
+}
