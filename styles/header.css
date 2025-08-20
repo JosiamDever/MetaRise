@@ -15,9 +15,15 @@ header .conteiner-navbar{
   
 }
 
+.conteiner-navbar h3{
+  
+  font-size: clamp(1.3rem,4vw,4.3vw); 
+  
+}
+
 .conteiner-navbar #navbar-bars{
   
-  font-size: 6vw;
+  font-size: clamp(1.3rem,4vw,4.3vw); 
   
   position: relative;
   z-index: 1002;
@@ -30,7 +36,7 @@ header .conteiner-navbar{
   
   display: none;
   
-  font-size: 6vw;
+  font-size: clamp(1.3rem,4vw,4.3vw); 
   
   position: relative;
   z-index: 1002;
@@ -41,7 +47,7 @@ header .conteiner-navbar{
 
 #navbar-exit.showExit{
   
-
+  display: inherit;
   
 }
 

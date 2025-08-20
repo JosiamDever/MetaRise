@@ -1,19 +1,25 @@
-let btnInit = document.getElementById('navbar-bars');
+const openBtn = document.getElementById('navbar-bars');
 
-btnInit.addEventListener('click',() => {
+openBtn.addEventListener('click',() =>{
   
   const sideBar = document.querySelector('.conteiner-sidebar');
   
+  sideBar.classList.add('sideBarAtiva')
+  
+  openBtn.style.display = "none";
+  
   const exitBtn = document.getElementById('navbar-exit');
   
-  sideBar.classList.contains('sideBarAtiva') 
-   
-   //se conter,remove
-   ? sideBar.classList.remove('sideBarAtiva')
-     
-   //se não,add 
-   : sideBar.classList.add('sideBarAtiva')
+  exitBtn.classList.add('showExit');
   
-});
-
-//reduzir a largura máxima dos parágrafos usando js,ao ativar o hover 
+  exitBtn.addEventListener('click',() =>{
+    
+    exitBtn.classList.remove('showExit');
+    
+    openBtn.style.display = "inline-block";
+    
+    sideBar.classList.remove('sideBarAtiva'); 
+    
+  }); 
+  
+}); 
