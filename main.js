@@ -22,4 +22,10 @@ openBtn.addEventListener('click',() =>{
     
   }); 
   
-}); 
+});
+
+window.addEventListener('resize',() => {
+  
+  console.log('Janela redimensionada!'); 
+  
+});

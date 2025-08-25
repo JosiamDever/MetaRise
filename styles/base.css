@@ -57,9 +57,10 @@ p{
   
 }
 
-.wrapper{
+:root{
   
-  padding: 0rem 0.8rem;
-
+  --orangeDF: rgba(255, 117, 56,1);
+  --whiteWide: rgba(245, 245, 245, 1);
+  --paddingSides: 0.8rem; 
   
 }
