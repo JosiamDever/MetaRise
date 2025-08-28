@@ -1,3 +1,16 @@
+@font-face {
+  
+    font-family: "Nulshock";
+    src: url("/styles/fonts/fontePrimaria/Nulshock-Bold.woff2")format("woff2"),
+    
+    url("/styles/fonts/fontePrimaria/Nulshock-Bold.woff")format("woff"),
+    
+    url("/styles/fonts/fontePrimaria/Nulshock-Bold.ttf")format("truetype");
+    
+    font-display: swap; 
+    
+}
+
 header .conteiner-navbar{
   
   background: linear-gradient(90deg, hsla(344, 97%, 63%, 1) 0%, hsla(232, 90%, 59%, 1) 100%);
@@ -7,7 +20,7 @@ header .conteiner-navbar{
   justify-content: space-between;
   align-items: center;
   
-  padding: 1rem 1rem;
+  padding: 0.8rem 0.8rem;
   
   position: fixed;
   width: 100%;
@@ -17,18 +30,30 @@ header .conteiner-navbar{
 
 .conteiner-navbar h3{
   
-  font-size: clamp(1.3rem,4vw,4.3vw); 
+  font-size: clamp(1.3rem,4vw,4.3vw);
+  
+  font-family: "Nulshock";
   
 }
 
 .conteiner-navbar #navbar-bars{
   
-  font-size: clamp(1.3rem,4vw,4.3vw); 
+  /*font-size: clamp(1.3rem,4vw,4.3vw); */ 
+  
+  font-size: 5vw;
   
   position: relative;
   z-index: 1002;
   
   cursor: pointer;
+  
+  transition: all 1s ease-out;
+  
+}
+
+.conteiner-navbar #navbar-bars:active{
+  
+  transform: scale(0.7);
   
 }
 
@@ -42,6 +67,12 @@ header .conteiner-navbar{
   z-index: 1002;
   
   cursor: pointer;
+  
+}
+
+#navbar-exit:active{
+  
+  transform: scale(0.7);
   
 }
 
@@ -71,11 +102,41 @@ header .conteiner-navbar{
   top: 0;
   right: -100%;
   
-  background: rgba(40, 40, 40, 0.8);
+  background: rgba(40, 40, 40, 0.95);
   
   padding: 8rem 0rem;
   
   transition: all 0.5s ease-out;
+  
+}
+
+.conteiner-sidebar::-webkit-scrollbar{
+  
+  width: 3px;
+  height: 3px;
+  
+  opacity: 0;
+  
+}
+
+.conteiner-sidebar::-webkit-scrollbar-track{
+  
+  /*background: rgba(169, 169, 169, 0.65);*/
+  
+  background: transparent;
+  
+  border-radius: 10px;
+  
+}
+
+.conteiner-sidebar::-webkit-scrollbar-thumb{
+  
+  background: linear-gradient(
+  90deg,
+  hsla(211, 96%, 62%, 1) 0%,
+  hsla(295, 94%, 76%, 1) 100%
+);
+  border-radius: 10px;
   
 }
 
@@ -113,7 +174,7 @@ header .conteiner-navbar{
   
   padding: 0rem 2rem;
   
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   
 }
 

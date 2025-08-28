@@ -1,5 +1,100 @@
-main{
+
+
+.conteiner-hero{
   
-  padding-top: 6rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 4rem;
+  
+  text-align: center;
+  
+}
+
+.conteiner-hero h1{
+  
+  font-size: clamp(1.8rem,5vw,20rem);
+  
+}
+
+.conteiner-hero p{
+  
+  padding: 0rem 2rem;
+  
+  font-size: clamp(1rem,1vw,10rem);
+  
+  line-height: 2rem;
+  
+  text-wrap: pretty; 
+  
+}
+
+.conteiner-hero button{
+  
+  padding: 0.5rem 1.5rem;
+  
+  border: none;
+  
+  border-radius: 18px;
+  
+  background: var(--orangeDF);
+  
+  color: whitesmoke;
+  
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  animation-fill-mode: none;
+  animation-direction: alternate;
+  animation-timing-function: 2s ease-out;
+  animation-play-state: running;
+  
+  font-size: clamp(1rem,2.5vw,10rem);
+  
+}
+
+
+@keyframes pulse{
+  
+  0%{
+    
+    transform: scale(1);
+    
+  }
+  
+  100%{
+    
+    transform: scale(1.1);
+    
+    box-shadow: 0px 0px 20px -3px rgba(247, 65, 251, 0.8); 
+    
+  }
+  
+}
+
+picture{
+  
+  min-width: 100%;
+  min-height: 300px;
+  
+}
+
+#imageConteiner{
+  
+  margin-top: 4rem;
+  
+  width: 100%;
+  height: 30vh;
+  
+}
+
+#imageConteiner img{
+  
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+  object-position: center;
   
 }

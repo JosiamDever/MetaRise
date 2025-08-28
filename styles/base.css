@@ -41,7 +41,7 @@ p{
   
 }
 
-.wrapper{
+.wrapper-fluid{
   
   width: 100%;
   min-height: 100%;
@@ -51,8 +51,16 @@ p{
   display: flex;
   flex-flow: column wrap;
 
-  gap: 3rem; 
+  gap: 8rem; 
   
   position: relative;
+  
+}
+
+:root{
+  
+  --orangeDF: rgba(255, 117, 56,1);
+  --whiteWide: rgba(245, 245, 245, 1);
+  --paddingSides: 0.8rem; 
   
 }
