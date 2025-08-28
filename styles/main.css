@@ -31,7 +31,7 @@
 
 .conteiner-hero button{
   
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1.5rem;
   
   border: none;
   
@@ -49,8 +49,6 @@
   animation-direction: alternate;
   animation-timing-function: 2s ease-out;
   animation-play-state: running;
-  
-  width: 40vw;
   
   font-size: clamp(1rem,2.5vw,10rem);
   
@@ -72,5 +70,31 @@
     box-shadow: 0px 0px 20px -3px rgba(247, 65, 251, 0.8); 
     
   }
+  
+}
+
+picture{
+  
+  min-width: 100%;
+  min-height: 300px;
+  
+}
+
+#imageConteiner{
+  
+  margin-top: 4rem;
+  
+  width: 100%;
+  height: 30vh;
+  
+}
+
+#imageConteiner img{
+  
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+  object-position: center;
   
 }
