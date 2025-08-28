@@ -1,4 +1,10 @@
-
+main{
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem; 
+  
+}
 
 .conteiner-hero{
   
@@ -14,6 +20,15 @@
 .conteiner-hero h1{
   
   font-size: clamp(1.8rem,5vw,20rem);
+  
+}
+
+#highlightHead{
+  
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   
 }
 
@@ -98,3 +113,125 @@ picture{
   object-position: center;
   
 }
+
+/*Sessão sobre*/ 
+#aboutSection{
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem; 
+  
+  padding: 0rem var(--paddingSides);
+  
+}
+
+#aboutSection #aboutCards{
+  
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 4.5rem;
+  
+}
+
+.aboutCard img{
+  
+  min-width: 9vw;
+  
+}
+
+#aboutSection .aboutCard{
+  
+  min-height: 35vh;
+  max-height: 35vh;
+  
+  overflow-y: auto;
+  
+  background: var(--orangeDF);
+  color: whitesmoke;
+  
+  padding: 1rem 1rem;
+  
+  border-radius: 14px;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+  min-width: 75%;
+  max-width: 75%;
+  
+  text-wrap: balance; 
+  text-align: center;
+  line-height: 1.5rem;
+  
+}
+
+.secondaryHea{
+  
+  font-size: clamp(2rem,5vw,80rem);
+  
+}
+
+.hightParagraph{
+  
+  position: relative;
+  font-size: clamp(1.6rem,2.5vw,10rem);
+  
+}
+
+#aboutSection .btnMore{
+  
+  min-width: 45%;
+  max-width: 45%;
+  
+  display: block;
+  margin: auto;
+  
+  position: relative;
+  
+  border: none;
+  
+  background: transparent;
+  
+  padding: 0.5rem 1rem;
+  
+  color: white;
+  
+  font-size: clamp(1rem,2.5vw,10rem);
+  
+}
+
+.btnMore::after{
+  
+  content: "";
+  bottom: -1rem;
+  height: 0.5vh;
+  left: 0;
+  width: 0;
+  
+  border-radius: 0 20px 20px 0;
+  
+  position: absolute;
+  background: linear-gradient(90deg, hsla(22, 100%, 78%, 1) 0%, hsla(2, 78%, 62%, 1) 100%);
+  
+  transition: width 0.5s ease-out;
+  
+}
+
+.btnMore:hover::after{
+  
+  width: 100%;
+  
+}
+
+.btnMore:active{
+  
+  transform: scale(0.95);
+  
+}
+
+
+
