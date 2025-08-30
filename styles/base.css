@@ -61,6 +61,12 @@ p{
   
   --orangeDF: rgba(255, 117, 56,1);
   --whiteWide: rgba(245, 245, 245, 1);
-  --paddingSides: 0.8rem; 
+  --paddingSides: 0rem;
+  
+  --floral-white: rgba(255, 252, 242, 1);
+  --timberwolf: rgba(204, 197, 185, 1);
+  --black-olive: rgba(64, 61, 57, 1);
+  --eerie-black: rgba(37, 36, 34, 1);
+  --flame: rgba(235, 94, 40, 1);
   
 }
