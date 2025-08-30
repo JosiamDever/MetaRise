@@ -253,5 +253,83 @@ picture{
   
 }
 
+#showCaseCourses {
+  
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f5f0e6;
+  
+}
+
+.hightlightHea {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2e3d30;
+  font-family: "Georgia", serif;
+}
+
+.course-card {
+  background: #fff;
+  border: 1px solid #e5d8b0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.course-card:hover {
+  border-color: #c3a962;
+  box-shadow: 0 4px 12px rgba(195,169,98,0.4);
+}
+
+.course-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2e3d30;
+}
+
+.course-description {
+  color: #4a4a4a;
+  margin-bottom: 0.8rem;
+}
+
+.course-duration {
+  font-weight: bold;
+  color: #3f4f41;
+  margin-bottom: 1rem;
+}
+
+.course-projects {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: #555;
+}
+
+.course-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c3a962;
+  margin: 1rem 0;
+}
+
+.course-start-btn {
+  padding: 0.7rem 1.4rem;
+  background: #2e3d30;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+}
+
+.course-start-btn:hover {
+  background: #c3a962;
+  color: #2e3d30;
+}
 
 
