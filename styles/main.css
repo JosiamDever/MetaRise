@@ -233,5 +233,25 @@ picture{
   
 }
 
+#showCaseCourses{
+  
+  background: #5B63B2;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem; 
+  
+  padding: 0rem var(--paddingSides);
+  
+}
+
+#showCaseCourses .course-card{
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem; 
+  
+}
+
 
 
